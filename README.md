@@ -6,6 +6,14 @@ This project demonstrates how to train a **YOLOX (You Only Look Once X)** object
 
 ---
 
+## 🔁 Files to Replace and Modify
+- your yolox/tools/demo.py with my yolox/tools/demo.py file : Made changes in this file and added a "class_json" argument to read class names of json file during testing. Also scroll down and search for "DEFAULT_LVIS_JSON". Change the path to your annotations .json file. ( I trained my model on LVIS Dataset )
+- replace yolox/yolox/data/dataset/coco.py with my file: not much changes but still safer side.
+- ( if its gotten confusing at this point then copy and replace these entire folders , 1. yolox/exps, 2. yolox/yolox/data/datasets, 3. yolox/tools.
+- Most important files to make changes - base_exp.py ( currently its modified version for yolox_m, take weights for different model versions as required ), coco.py, demo.py, train.py
+
+---
+
 ## 📌 Project Summary
 
 This repository provides a detailed pipeline for:
